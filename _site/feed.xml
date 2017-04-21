@@ -6,13 +6,13 @@
 </description>
     <link>http://jordanott.github.io/</link>
     <atom:link href="http://jordanott.github.io/feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Fri, 21 Apr 2017 15:27:10 -0700</pubDate>
-    <lastBuildDate>Fri, 21 Apr 2017 15:27:10 -0700</lastBuildDate>
+    <pubDate>Fri, 21 Apr 2017 15:36:25 -0700</pubDate>
+    <lastBuildDate>Fri, 21 Apr 2017 15:36:25 -0700</lastBuildDate>
     <generator>Jekyll v3.0.1</generator>
     
       <item>
         <title>A Neural Network Wrote My English Essay</title>
-        <description>This blog is coming soon...
+        <description>&lt;p&gt;This blog is coming soon…&lt;/p&gt;
 
 &lt;figure class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-python&quot; data-lang=&quot;python&quot;&gt;&lt;span class=&quot;k&quot;&gt;def&lt;/span&gt; &lt;span class=&quot;nf&quot;&gt;print_hi&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;name&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;):&lt;/span&gt;
   &lt;span class=&quot;k&quot;&gt;print&lt;/span&gt; &lt;span class=&quot;s&quot;&gt;&quot;Hi,&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;name&lt;/span&gt;
