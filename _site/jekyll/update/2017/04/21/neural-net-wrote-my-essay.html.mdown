@@ -6,12 +6,11 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
-  <title>Jordan Ott Blog</title>
-  <meta name="description" content=""I have no special talent. I am only passionately curious." - Albert Einstein
-">
+  <title>A Neural Network Wrote My English Essay</title>
+  <meta name="description" content="This blog is coming soon...">
 
   <link rel="stylesheet" href="/css/main.css">
-  <link rel="canonical" href="http://jordanott.github.io/">
+  <link rel="canonical" href="http://jordanott.github.io/jekyll/update/2017/04/21/neural-net-wrote-my-essay.html">
   <link rel="alternate" type="application/rss+xml" title="Jordan Ott Blog" href="http://jordanott.github.io/feed.xml">
 </head>
 
@@ -55,25 +54,26 @@
 
     <div class="page-content">
       <div class="wrapper">
-        <div class="home">
+        <article class="post" itemscope itemtype="http://schema.org/BlogPosting">
 
-  <h1 class="page-heading">Posts</h1>
+  <header class="post-header">
+    <h1 class="post-title" itemprop="name headline">A Neural Network Wrote My English Essay</h1>
+    <p class="post-meta"><time datetime="2017-04-21T00:00:00-07:00" itemprop="datePublished">Apr 21, 2017</time></p>
+  </header>
 
-  <ul class="post-list">
-    
-      <li>
-        <span class="post-meta">Apr 21, 2017</span>
+  <div class="post-content" itemprop="articleBody">
+    This blog is coming soon...
 
-        <h2>
-          <a class="post-link" href="/jekyll/update/2017/04/21/neural-net-wrote-my-essay.html">A Neural Network Wrote My English Essay</a>
-        </h2>
-      </li>
-    
-  </ul>
+<figure class="highlight"><pre><code class="language-python" data-lang="python"><span class="k">def</span> <span class="nf">print_hi</span><span class="p">(</span><span class="n">name</span><span class="p">):</span>
+  <span class="k">print</span> <span class="s">"Hi,"</span><span class="p">,</span><span class="n">name</span>
 
-  <p class="rss-subscribe">subscribe <a href="/feed.xml">via RSS</a></p>
+<span class="n">print_hi</span><span class="p">(</span><span class="s">'Tom'</span><span class="p">)</span>
+<span class="c">#=&gt; prints 'Hi, Tom' to STDOUT.</span></code></pre></figure>
 
-</div>
+
+  </div>
+
+</article>
 
       </div>
     </div>
