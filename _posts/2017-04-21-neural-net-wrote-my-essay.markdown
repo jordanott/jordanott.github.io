@@ -21,7 +21,7 @@ First, we'll need to gather lots of training data for our network. My essay is s
 [Jordan Ott](www.jordanott.com)  
 [Dr. Seuss](http://www.seussville.com/books/book_detail.php?isbn=9780375851568) is it a crime to want your model to rhyme?  
 
-Once we have our data we can start creating our model. We'll be using a type of recurrent structure called an LSTM. These models are very useful when dealing with time dependent data. That is current data samples are dependent on prior samples. Typical feed-forward networks are indifferent to time sensitive data and have no notion of memory.   
+Once we have our data we can start creating our model. We'll be using a type of recurrent structure called an LSTM. These models are very useful when dealing with time dependent data i.e. current data samples are dependent on prior samples. Feed-forward networks are indifferent to time sensitive data and have no notion of memory. Structuring sentences depends on one's ability to relate current words to previous one.s This is where LSTMs will be very useful.      
 
 I won't go into the low level details of how they work since many others have wonderful explanations of them. We'll use Python and Keras for our implementation which makes it very easy to stack multiple LSTM cells. Initializing our network is very straight forward. 
 
