@@ -7,11 +7,11 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
   <title>A Neural Network Wrote My English Essay</title>
-  <meta name="description" content="This blog is coming soon…">
-
+  <meta name="description" content="As a computer science major in the final semester of my undergrad degree, the ‘senioritis’ has started to set in. Especially when it comes to my writing GE. ...">
+  <script type="text/javascript" src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
   <link rel="stylesheet" href="/css/main.css">
   <link rel="canonical" href="http://jordanott.github.io/jekyll/update/2017/04/21/neural-net-wrote-my-essay.html">
-  <link rel="alternate" type="application/rss+xml" title="Jordan Ott Blog" href="http://jordanott.github.io/feed.xml">
+  <link rel="alternate" type="application/rss+xml" title="Jordan Ott" href="http://jordanott.github.io/feed.xml">
 </head>
 
 
@@ -21,7 +21,7 @@
 
   <div class="wrapper">
 
-    <a class="site-title" href="/">Jordan Ott Blog</a>
+    <a class="site-title" href="/">Jordan Ott</a>
 
     <nav class="site-nav">
       <a href="#" class="menu-icon">
@@ -62,13 +62,43 @@
   </header>
 
   <div class="post-content" itemprop="articleBody">
-    <p>This blog is coming soon…</p>
+    <p>As a computer science major in the final semester of my undergrad degree, the ‘senioritis’ has started to set in. Especially when it comes to my writing GE. Unfortunately, without this class I cannot graduate. Thus, I was presented with a very standard optimization problem. Get a high enough grade to pass, with the minimal amount of  writing required. It turns outs that we can define a function:</p>
 
-<figure class="highlight"><pre><code class="language-python" data-lang="python"><span class="k">def</span> <span class="nf">print_hi</span><span class="p">(</span><span class="n">name</span><span class="p">):</span>
-  <span class="k">print</span> <span class="s">"Hi,"</span><span class="p">,</span><span class="n">name</span>
+<center> $$f(w) = \frac{1}{w}$$  </center>
 
-<span class="n">print_hi</span><span class="p">(</span><span class="s">'Tom'</span><span class="p">)</span>
-<span class="c">#=&gt; prints 'Hi, Tom' to STDOUT.</span></code></pre></figure>
+<p>where <script type="math/tex">w</script> is the amount of time spent writing and the output, <script type="math/tex">f(w)</script>, is the happiness I feel. What’s great about this function is that it is continuous and therefore differentiable. Hurray optimization! It turns out that as the hours spent writing approaches zero my happiness level increases infinitely. We should definitely expoit this finding.</p>
+
+<p>How, you ask? With a Long Short Term Memory (<a href="http://colah.github.io/posts/2015-08-Understanding-LSTMs/">LSTM</a>) network obviously! <strong>Spoiler alert:</strong> I’m training a neural net to write my essay for me.</p>
+
+<p>First, we’ll need to gather lots of training data for our network. My essay is supposed to be a reflective piece on the class as a whole. To accomplish this I used the books we read for class, articles we talked about and numerous samples of my own writing.</p>
+
+<p><a href="http://english4success.ru/Upload/books/268.pdf">The Glass Castle</a><br />
+<a href="http://www.george-orwell.org/1984">1984</a><br />
+<a href="http://www.cgpgrey.com/blog/humans-need-not-apply">Humans Need Not Apply</a><br />
+<a href="http://cs231n.stanford.edu/reports/2016/pdfs/106_Report.pdf">Recurrent Deep Q-Learning for PAC-MAN</a><br />
+<a href="www.jordanott.com">Jordan Ott</a><br />
+<a href="http://www.seussville.com/books/book_detail.php?isbn=9780375851568">Dr. Seuss</a> is it a crime to want your model to rhyme?</p>
+
+<p>Once we have our data we can start creating our model. We’ll be using a type of recurrent structure called an LSTM. These models are very useful when dealing with time dependent data. That is current data samples are dependent on prior samples. Typical feed-forward networks are indifferent to time sensitive data and have no notion of memory.</p>
+
+<p>I won’t go into the low level details of how they work since many others have wonderful explanations of them. We’ll use Python and Keras for our implementation which makes it very easy to stack multiple LSTM cells. Initializing our network is very straight forward.</p>
+
+<figure class="highlight"><pre><code class="language-python" data-lang="python"><span class="kn">from</span> <span class="nn">keras.models</span> <span class="kn">import</span> <span class="n">Sequential</span>
+<span class="kn">from</span> <span class="nn">keras.layers</span> <span class="kn">import</span> <span class="n">Dense</span><span class="p">,</span> <span class="n">Activation</span>
+<span class="kn">from</span> <span class="nn">keras.layers</span> <span class="kn">import</span> <span class="n">LSTM</span>
+<span class="kn">from</span> <span class="nn">keras.optimizers</span> <span class="kn">import</span> <span class="n">RMSprop</span>
+
+<span class="n">model</span> <span class="o">=</span> <span class="n">Sequential</span><span class="p">()</span>
+<span class="c"># set return_sequences=True so we can feed the output of one cell right into another</span>
+<span class="n">model</span><span class="o">.</span><span class="n">add</span><span class="p">(</span><span class="n">LSTM</span><span class="p">(</span><span class="mi">256</span><span class="p">,</span><span class="n">return_sequences</span><span class="o">=</span><span class="bp">True</span><span class="p">,</span> <span class="n">input_shape</span><span class="o">=</span><span class="p">(</span><span class="n">maxlen</span><span class="p">,</span> <span class="nb">len</span><span class="p">(</span><span class="n">chars</span><span class="p">))))</span>
+<span class="n">model</span><span class="o">.</span><span class="n">add</span><span class="p">(</span><span class="n">LSTM</span><span class="p">(</span><span class="mi">256</span><span class="p">,</span><span class="n">return_sequences</span><span class="o">=</span><span class="bp">True</span><span class="p">))</span>
+<span class="n">model</span><span class="o">.</span><span class="n">add</span><span class="p">(</span><span class="n">LSTM</span><span class="p">(</span><span class="mi">256</span><span class="p">))</span>
+<span class="c"># add a fully connected layer for our character level predictions</span>
+<span class="n">model</span><span class="o">.</span><span class="n">add</span><span class="p">(</span><span class="n">Dense</span><span class="p">(</span><span class="nb">len</span><span class="p">(</span><span class="n">chars</span><span class="p">)))</span>
+<span class="n">model</span><span class="o">.</span><span class="n">add</span><span class="p">(</span><span class="n">Activation</span><span class="p">(</span><span class="s">'softmax'</span><span class="p">))</span>
+<span class="c"># more optimization!</span>
+<span class="n">optimizer</span> <span class="o">=</span> <span class="n">RMSprop</span><span class="p">(</span><span class="n">lr</span><span class="o">=</span><span class="mf">0.01</span><span class="p">)</span>
+<span class="n">model</span><span class="o">.</span><span class="nb">compile</span><span class="p">(</span><span class="n">loss</span><span class="o">=</span><span class="s">'categorical_crossentropy'</span><span class="p">,</span> <span class="n">optimizer</span><span class="o">=</span><span class="n">optimizer</span><span class="p">)</span></code></pre></figure>
 
 
   </div>
@@ -82,12 +112,12 @@
 
   <div class="wrapper">
 
-    <h2 class="footer-heading">Jordan Ott Blog</h2>
+    <h2 class="footer-heading">Jordan Ott</h2>
 
     <div class="footer-col-wrapper">
       <div class="footer-col footer-col-1">
         <ul class="contact-list">
-          <li>Jordan Ott Blog</li>
+          <li>Jordan Ott</li>
           <li><a href="mailto:jordanott365@gmail.com">jordanott365@gmail.com</a></li>
         </ul>
       </div>
