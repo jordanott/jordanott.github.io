@@ -4,12 +4,10 @@ title: About
 permalink: /about/
 ---
 
-This is the base Jekyll theme. You can find out more info about customizing your Jekyll theme, as well as basic Jekyll usage documentation at [jekyllrb.com](http://jekyllrb.com/)
+I am machine learning researcher at Chapman University's [MLAT Lab](http://mlat.chapman.edu/). I finished my Bachelors degree in three years and am currently working on my Masters in Computational Data Science. I plan to go on for my PhD starting in the fall of 2018.  
 
-You can find the source code for the Jekyll new theme at:
-{% include icon-github.html username="jglovier" %} /
-[jekyll-new](https://github.com/jglovier/jekyll-new)
+My dream is to be a research scientist at a place like Google DeepMind or OpenAI. My areas of interest include computer vision, reinforcement learning and transfer learning.
 
-You can find the source code for Jekyll at
-{% include icon-github.html username="jekyll" %} /
-[jekyll](https://github.com/jekyll/jekyll)
+You can find the source code for all my projects at:
+{% include icon-github.html username="jordanott" %}
+

@@ -6,8 +6,8 @@
 </description>
     <link>http://jordanott.github.io/</link>
     <atom:link href="http://jordanott.github.io/feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Fri, 21 Apr 2017 21:53:38 -0700</pubDate>
-    <lastBuildDate>Fri, 21 Apr 2017 21:53:38 -0700</lastBuildDate>
+    <pubDate>Fri, 21 Apr 2017 22:06:18 -0700</pubDate>
+    <lastBuildDate>Fri, 21 Apr 2017 22:06:18 -0700</lastBuildDate>
     <generator>Jekyll v3.0.1</generator>
     
       <item>
@@ -16,7 +16,7 @@
 
 &lt;center&gt; $$f(w) = \frac{1}{w}$$  &lt;/center&gt;
 
-&lt;p&gt;where &lt;script type=&quot;math/tex&quot;&gt;w&lt;/script&gt; is the amount of time spent writing and the output, &lt;script type=&quot;math/tex&quot;&gt;f(w)&lt;/script&gt;, is the happiness I feel. What’s great about this function is that it is continuous and therefore differentiable. Hurray optimization! It turns out that as the hours spent writing approaches zero my happiness level increases infinitely. We should definitely expoit this finding.&lt;/p&gt;
+&lt;p&gt;where &lt;script type=&quot;math/tex&quot;&gt;w&lt;/script&gt; is the amount of time spent writing and the output, &lt;script type=&quot;math/tex&quot;&gt;f(w)&lt;/script&gt;, is the happiness I feel. What’s great about this function is that it is continuous and therefore differentiable. Hurray optimization! It turns out that as the hours spent writing approaches zero my happiness level increases infinitely. We should definitely exploit this finding.&lt;/p&gt;
 
 &lt;p&gt;How, you ask? With a Long Short Term Memory (&lt;a href=&quot;http://colah.github.io/posts/2015-08-Understanding-LSTMs/&quot;&gt;LSTM&lt;/a&gt;) network obviously! &lt;strong&gt;Spoiler alert:&lt;/strong&gt; I’m training a neural net to write my essay for me.&lt;/p&gt;
 

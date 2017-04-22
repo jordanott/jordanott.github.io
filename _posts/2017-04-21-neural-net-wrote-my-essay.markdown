@@ -8,7 +8,7 @@ As a computer science major in the final semester of my undergrad degree, the �
 
 <center> $$f(w) = \frac{1}{w}$$  </center>
 
-where $$w$$ is the amount of time spent writing and the output, $$f(w)$$, is the happiness I feel. What’s great about this function is that it is continuous and therefore differentiable. Hurray optimization! It turns out that as the hours spent writing approaches zero my happiness level increases infinitely. We should definitely expoit this finding.
+where $$w$$ is the amount of time spent writing and the output, $$f(w)$$, is the happiness I feel. What’s great about this function is that it is continuous and therefore differentiable. Hurray optimization! It turns out that as the hours spent writing approaches zero my happiness level increases infinitely. We should definitely exploit this finding.
 
 How, you ask? With a Long Short Term Memory ([LSTM](http://colah.github.io/posts/2015-08-Understanding-LSTMs/)) network obviously! **Spoiler alert:** I'm training a neural net to write my essay for me.  
 
