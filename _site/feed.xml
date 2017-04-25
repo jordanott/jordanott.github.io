@@ -6,9 +6,26 @@
 </description>
     <link>http://jordanott.github.io/</link>
     <atom:link href="http://jordanott.github.io/feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Fri, 21 Apr 2017 22:06:18 -0700</pubDate>
-    <lastBuildDate>Fri, 21 Apr 2017 22:06:18 -0700</lastBuildDate>
+    <pubDate>Tue, 25 Apr 2017 00:49:00 -0700</pubDate>
+    <lastBuildDate>Tue, 25 Apr 2017 00:49:00 -0700</lastBuildDate>
     <generator>Jekyll v3.0.1</generator>
+    
+      <item>
+        <title>Morphinity - A Language for Matrix Operations</title>
+        <description>
+&lt;figure class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-java&quot; data-lang=&quot;java&quot;&gt;&lt;span class=&quot;c1&quot;&gt;// java code snippet&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/figure&gt;
+
+</description>
+        <pubDate>Tue, 25 Apr 2017 00:00:00 -0700</pubDate>
+        <link>http://jordanott.github.io/jekyll/update/2017/04/25/matrix-operations-language.html</link>
+        <guid isPermaLink="true">http://jordanott.github.io/jekyll/update/2017/04/25/matrix-operations-language.html</guid>
+        
+        
+        <category>jekyll</category>
+        
+        <category>update</category>
+        
+      </item>
     
       <item>
         <title>A Neural Network Wrote My English Essay</title>
@@ -29,7 +46,7 @@
 &lt;a href=&quot;www.jordanott.com&quot;&gt;Jordan Ott&lt;/a&gt;&lt;br /&gt;
 &lt;a href=&quot;http://www.seussville.com/books/book_detail.php?isbn=9780375851568&quot;&gt;Dr. Seuss&lt;/a&gt; is it a crime to want your model to rhyme?&lt;/p&gt;
 
-&lt;p&gt;Once we have our data we can start creating our model. We’ll be using a type of recurrent structure called an LSTM. These models are very useful when dealing with time dependent data. That is current data samples are dependent on prior samples. Typical feed-forward networks are indifferent to time sensitive data and have no notion of memory.&lt;/p&gt;
+&lt;p&gt;Once we have our data we can start creating our model. We’ll be using a type of recurrent structure called an LSTM. These models are very useful when dealing with time dependent data i.e. current data samples are dependent on prior samples. Feed-forward networks are indifferent to time sensitive data and have no notion of memory. Structuring sentences depends on one’s ability to relate current words to previous one.s This is where LSTMs will be very useful.&lt;/p&gt;
 
 &lt;p&gt;I won’t go into the low level details of how they work since many others have wonderful explanations of them. We’ll use Python and Keras for our implementation which makes it very easy to stack multiple LSTM cells. Initializing our network is very straight forward.&lt;/p&gt;
 
