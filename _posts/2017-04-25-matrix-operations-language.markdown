@@ -4,6 +4,7 @@ title:  "Morphinity - A Language for Matrix Operations"
 date:   2017-04-25 
 categories: jekyll update
 ---
+[Abby Atchison](http://www1.chapman.edu/~atchi102/), [Austin Ayers](), and [Josh Graves](http://www1.chapman.edu/~grave121/) are contributors on this project.  
 
 Defining a matrix in most programming languages is often ugly and counter intuative. Few languages offer built in support for matrix operations. Thus we propose a langauge spcefically for matrix operations. 
 
