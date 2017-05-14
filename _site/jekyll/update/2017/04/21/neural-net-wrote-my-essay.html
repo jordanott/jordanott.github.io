@@ -75,7 +75,6 @@
 <p><a href="http://english4success.ru/Upload/books/268.pdf">The Glass Castle</a><br />
 <a href="http://www.george-orwell.org/1984">1984</a><br />
 <a href="http://www.cgpgrey.com/blog/humans-need-not-apply">Humans Need Not Apply</a><br />
-<a href="http://cs231n.stanford.edu/reports/2016/pdfs/106_Report.pdf">Recurrent Deep Q-Learning for PAC-MAN</a><br />
 <a href="www.jordanott.com">Jordan Ott</a><br />
 <a href="http://www.seussville.com/books/book_detail.php?isbn=9780375851568">Dr. Seuss</a> is it a crime to want your model to rhyme?</p>
 
@@ -99,6 +98,27 @@
 <span class="c"># more optimization!</span>
 <span class="n">optimizer</span> <span class="o">=</span> <span class="n">RMSprop</span><span class="p">(</span><span class="n">lr</span><span class="o">=</span><span class="mf">0.01</span><span class="p">)</span>
 <span class="n">model</span><span class="o">.</span><span class="nb">compile</span><span class="p">(</span><span class="n">loss</span><span class="o">=</span><span class="s">'categorical_crossentropy'</span><span class="p">,</span> <span class="n">optimizer</span><span class="o">=</span><span class="n">optimizer</span><span class="p">)</span></code></pre></figure>
+
+<h3 id="results">Results</h3>
+
+<div class="highlighter-rouge"><pre class="highlight"><code>‘No! Not merely to extract your confession, not to punish you. Shall I
+tele st te as eers aedr the the  the the th t the fall  the sode and  
+and woul happe and the the ald were not and ofr the sary and we he  
+I ton wasee o no the so hase t therot an I saugnt he  t he ker  
+andhne the  and at was eton Whe the thi as the andile the to the  
+ingou and t the the oh wge s ante we whe  the stit an and the and  
+of te the the  the bast w the the the fo ande the he wonoth  
+stern and animated.
+</code></pre>
+</div>
+
+<p>The phrase <code class="highlighter-rouge">‘No! Not merely to extract your confession, not to punish you. Shall</code> is what is fed to the network to prompt it to generate the resulting paragraph. Everything that follows was produced by the LSTM. I think what’s very interesting about this is if you glance very quickly at it you can’t tell that it’s complete gibberish. The network learns proper spacing, punctuation and even spells a few words correctly.</p>
+
+<p>You can find my full “essay” <a href="http://jordanott.github.io/assets/results.txt">here</a>. I hope my professor likes it!</p>
+
+<h3 id="moving-forward">Moving Forward</h3>
+
+<p>Character level LSTMs are nice and pretty efficient but when it comes to generating meaningful text they might not be the best choice. Think about how you write. You don’t think one letter at a time and generate a probability distribution for what letter comes next. You think in complete words with concrete ideas of what you want to convey. This area of natural language processing still has a long ways to go.</p>
 
 
   </div>
