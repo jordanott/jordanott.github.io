@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  "A Neural Network Wrote My English Essay"
-date:   2017-04-21
+date:   2017-05-14
 categories: jekyll update
 ---
 As a computer science major in the final semester of my undergrad degree, the ‘senioritis’ has started to set in. Especially when it comes to my writing GE. Unfortunately, without this class I cannot graduate. Thus, I was presented with a very standard optimization problem. Get a high enough grade to pass, with the minimal amount of  writing required. It turns outs that we can define a function:  
@@ -41,7 +41,8 @@ model.add(Activation('softmax'))
 # more optimization!
 optimizer = RMSprop(lr=0.01)
 model.compile(loss='categorical_crossentropy', optimizer=optimizer)
-{% endhighlight %}
+{% endhighlight %}  
+If you plan to try this with a multiple layer LSTM you better have a nice GPU. I used an Nvidia TitanX and just let this run for a week or so.  
 
 ### Results ###
 {% raw %}
