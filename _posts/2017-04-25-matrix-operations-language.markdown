@@ -28,9 +28,7 @@ The first step in creating your own programming language is to create a grammar 
 {% highlight java %}
 {% raw %}
 grammar morphinity;
-
 program : statement+ ;
-
 statement : assign | operation | print;
 
 assign : ID equals (newline matrix | ID newline);
@@ -48,7 +46,7 @@ NUMBER: [0-9]+;
 {% endraw %}
 {% endhighlight %}  
 
-Here is an example of Morphinity syntax:  
+Here is an example of Morphinity syntax, with the corresponding parse tree.   
 {% highlight morphinity %}
 {% raw %}
 a=
@@ -60,13 +58,6 @@ b=
 c=a+b
 {% endraw %}
 {% endhighlight %}
-
 ![Something]({{ site.url }}/assets/antlr4_parse_tree.png)  
 
-{% comment %}
-need for this lang
-grammar
-parse tree
-assignments, java
-demonstration
-{% endcomment %}
+Now we add the functionality to our language by creating a listener that navigates the parse tree. See [listener file](https://github.com/jordanott/Morphinity/blob/master/MyListener.java). 

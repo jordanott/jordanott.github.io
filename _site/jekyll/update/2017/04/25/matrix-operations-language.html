@@ -80,9 +80,7 @@
 <p>The first step in creating your own programming language is to create a grammar for that language. Most programming languages are defined using <a href="https://en.wikipedia.org/wiki/Backus%E2%80%93Naur_form">Backus-Naur Form</a> (BNF).</p>
 
 <figure class="highlight"><pre><code class="language-java" data-lang="java"><span class="n">grammar</span> <span class="n">morphinity</span><span class="o">;</span>
-
 <span class="n">program</span> <span class="o">:</span> <span class="n">statement</span><span class="o">+</span> <span class="o">;</span>
-
 <span class="n">statement</span> <span class="o">:</span> <span class="n">assign</span> <span class="o">|</span> <span class="n">operation</span> <span class="o">|</span> <span class="n">print</span><span class="o">;</span>
 
 <span class="n">assign</span> <span class="o">:</span> <span class="n">ID</span> <span class="n">equals</span> <span class="o">(</span><span class="n">newline</span> <span class="n">matrix</span> <span class="o">|</span> <span class="n">ID</span> <span class="n">newline</span><span class="o">);</span>
@@ -98,7 +96,7 @@
 <span class="n">ID</span> <span class="o">:</span> <span class="o">[</span><span class="n">a</span><span class="o">-</span><span class="n">z</span><span class="o">]+;</span>
 <span class="nl">NUMBER:</span> <span class="o">[</span><span class="mi">0</span><span class="o">-</span><span class="mi">9</span><span class="o">]+;</span></code></pre></figure>
 
-<p>Here is an example of Morphinity syntax:</p>
+<p>Here is an example of Morphinity syntax, with the corresponding parse tree.</p>
 
 <figure class="highlight"><pre><code class="language-morphinity" data-lang="morphinity">a=
 1 2 3
@@ -110,6 +108,7 @@ c=a+b</code></pre></figure>
 
 <p><img src="http://jordanott.github.io/assets/antlr4_parse_tree.png" alt="Something" /></p>
 
+<p>Now we add the functionality to our language by creating a listener that navigates the parse tree. See <a href="https://github.com/jordanott/Morphinity/blob/master/MyListener.java">listener file</a>.</p>
 
   </div>
 

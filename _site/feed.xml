@@ -6,8 +6,8 @@
 </description>
     <link>http://jordanott.github.io/</link>
     <atom:link href="http://jordanott.github.io/feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Fri, 26 May 2017 09:46:00 -0700</pubDate>
-    <lastBuildDate>Fri, 26 May 2017 09:46:00 -0700</lastBuildDate>
+    <pubDate>Fri, 26 May 2017 09:53:42 -0700</pubDate>
+    <lastBuildDate>Fri, 26 May 2017 09:53:42 -0700</lastBuildDate>
     <generator>Jekyll v3.0.1</generator>
     
       <item>
@@ -104,9 +104,7 @@ stern and animated.
 &lt;p&gt;The first step in creating your own programming language is to create a grammar for that language. Most programming languages are defined using &lt;a href=&quot;https://en.wikipedia.org/wiki/Backus%E2%80%93Naur_form&quot;&gt;Backus-Naur Form&lt;/a&gt; (BNF).&lt;/p&gt;
 
 &lt;figure class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-java&quot; data-lang=&quot;java&quot;&gt;&lt;span class=&quot;n&quot;&gt;grammar&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;morphinity&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;;&lt;/span&gt;
-
 &lt;span class=&quot;n&quot;&gt;program&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;statement&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;+&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;;&lt;/span&gt;
-
 &lt;span class=&quot;n&quot;&gt;statement&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;assign&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;|&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;operation&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;|&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;print&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;;&lt;/span&gt;
 
 &lt;span class=&quot;n&quot;&gt;assign&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;ID&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;equals&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;newline&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;matrix&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;|&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;ID&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;newline&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;);&lt;/span&gt;
@@ -122,7 +120,7 @@ stern and animated.
 &lt;span class=&quot;n&quot;&gt;ID&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;a&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;-&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;z&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;]+;&lt;/span&gt;
 &lt;span class=&quot;nl&quot;&gt;NUMBER:&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;0&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;-&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;9&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;]+;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/figure&gt;
 
-&lt;p&gt;Here is an example of Morphinity syntax:&lt;/p&gt;
+&lt;p&gt;Here is an example of Morphinity syntax, with the corresponding parse tree.&lt;/p&gt;
 
 &lt;figure class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-morphinity&quot; data-lang=&quot;morphinity&quot;&gt;a=
 1 2 3
@@ -134,6 +132,7 @@ c=a+b&lt;/code&gt;&lt;/pre&gt;&lt;/figure&gt;
 
 &lt;p&gt;&lt;img src=&quot;http://jordanott.github.io/assets/antlr4_parse_tree.png&quot; alt=&quot;Something&quot; /&gt;&lt;/p&gt;
 
+&lt;p&gt;Now we add the functionality to our language by creating a listener that navigates the parse tree. See &lt;a href=&quot;https://github.com/jordanott/Morphinity/blob/master/MyListener.java&quot;&gt;listener file&lt;/a&gt;.&lt;/p&gt;
 </description>
         <pubDate>Tue, 25 Apr 2017 00:00:00 -0700</pubDate>
         <link>http://jordanott.github.io/jekyll/update/2017/04/25/matrix-operations-language.html</link>
