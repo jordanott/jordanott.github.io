@@ -7,13 +7,18 @@
 
 # Site settings
 title: Jordan Ott
-email: jordanott365@gmail.com
+#email: jordanott365@gmail.com
 description: > # this means to ignore newlines until "baseurl:"
   "I have no special talent. I am only passionately curious." - Albert Einstein
-baseurl: "" 
-url: "http://jordanott.github.io" 
+baseurl: ""
+url: "http://jordanott.github.io"
 
 github_username:  jordanott
+linkedin_username: jordan-ott-93a96b100
+topic_order:
+  - '/CV'
+  - '/publications'
+  - '/about'
 
 # Build settings
 markdown: kramdown

@@ -6,12 +6,12 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
-  <title>Jordan Ott</title>
+  <title>CV</title>
   <meta name="description" content=""I have no special talent. I am only passionately curious." - Albert Einstein
 ">
   <script type="text/javascript" src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
   <link rel="stylesheet" href="/css/main.css">
-  <link rel="canonical" href="http://jordanott.github.io/">
+  <link rel="canonical" href="http://jordanott.github.io/assets/JordanOttCV.pdf">
   <link rel="alternate" type="application/rss+xml" title="Jordan Ott" href="http://jordanott.github.io/feed.xml">
 </head>
 
@@ -59,47 +59,20 @@
 
     <div class="page-content">
       <div class="wrapper">
-        <div class="home">
-  <div style="width: 100%; height: 100%;">
-    <div style="padding-bottom:10px; width: 50%;">
-      <img style="width: 70%; border-radius:200px; margin-right: 15%; float:left; border: 8px; position: relative;" src="assets/me.jpg"></img>
-    </div>
-      <h2> About Me </h2>
-      I am currently pursuing a M.S. in Computational Data Science at Chapman University where I am a machine learning researcher in the <a class="page-link" href="http://mlat.chapman.edu">MLAT Lab</a>.
-      I will graduate in May 2018 and go on for a PhD in Computer Science.
-      <br><br>
-      When I'm not conjuring algorithms in my stereotypical computer scientist's laire, you can find me doing something outdoors.
-      I love to hike, run and explore new places. I'll also crush you in a game of ping pong.
+        <article class="post">
 
-      <br><br>
-      My research interests involve sensory motor integration, specifically vision and attention, and theories of learning (gradient descent) in the brain.
-      My dream is to be a research scientist at a place like Google DeepMind or OpenAI.
-      <br><br>
-      <h2> Education </h2>
+  <header class="post-header">
+    <h1 class="post-title">CV</h1>
+    <script type="text/javascript"
+      src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML">
+    </script>
+  </header>
 
-      <strong>M.S. Computational Data Science</strong><br>
-      Chapman University (2017 - 2018)
-      <br><br>
-
-      <strong>B.S. Computer Science Magna Cum Laude</strong><br>
-      Minor in Mathematics<br>
-      Chapman University (2014 - 2017)
-
-    <br>
-  </div>
-  <!---
-  <a class="page-link" href="https://www1.chapman.edu/~ott109/MachineLearning.html">ML Projects</a>
-  <br>
-  <a class="page-link" href="http://jordanott.github.io/assets/JordanOttCV.pdf">CV</a>
-  <br><br>
-
-  <h1 class="page-heading">Posts</h1>
-
-  <ul class="post-list">
+  <div class="post-content">
     
-  </ul>
--->
-</div>
+  </div>
+
+</article>
 
       </div>
     </div>
