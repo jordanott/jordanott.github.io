@@ -6,9 +6,42 @@
 </description>
     <link>http://jordanott.github.io/</link>
     <atom:link href="http://jordanott.github.io/feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Mon, 26 Mar 2018 16:01:06 -0700</pubDate>
-    <lastBuildDate>Mon, 26 Mar 2018 16:01:06 -0700</lastBuildDate>
+    <pubDate>Tue, 17 Apr 2018 14:08:41 -0700</pubDate>
+    <lastBuildDate>Tue, 17 Apr 2018 14:08:41 -0700</lastBuildDate>
     <generator>Jekyll v3.0.1</generator>
+    
+      <item>
+        <title>May 30th - June 11th 2018</title>
+        <description>&lt;p&gt;Cruise&lt;/p&gt;
+</description>
+        <pubDate>Wed, 03 Jan 2018 00:00:00 -0800</pubDate>
+        <link>http://jordanott.github.io/2018/01/03/job01.html</link>
+        <guid isPermaLink="true">http://jordanott.github.io/2018/01/03/job01.html</guid>
+        
+        
+      </item>
+    
+      <item>
+        <title>May 29th, 2018</title>
+        <description>&lt;p&gt;I presented at the International Conference on Mining Software Repositories (MSR) in Gothenburg, Sweden.&lt;/p&gt;
+</description>
+        <pubDate>Tue, 02 Jan 2018 00:00:00 -0800</pubDate>
+        <link>http://jordanott.github.io/2018/01/02/job01.html</link>
+        <guid isPermaLink="true">http://jordanott.github.io/2018/01/02/job01.html</guid>
+        
+        
+      </item>
+    
+      <item>
+        <title>May 27th, 2018</title>
+        <description>&lt;p&gt;I presented at the International Conference on Program Comprehension (ICPC) in Gothenburg, Sweden.&lt;/p&gt;
+</description>
+        <pubDate>Mon, 01 Jan 2018 00:00:00 -0800</pubDate>
+        <link>http://jordanott.github.io/2018/01/01/job01.html</link>
+        <guid isPermaLink="true">http://jordanott.github.io/2018/01/01/job01.html</guid>
+        
+        
+      </item>
     
   </channel>
 </rss>

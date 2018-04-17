@@ -17,8 +17,8 @@ github_username:  jordanott
 linkedin_username: jordan-ott-93a96b100
 topic_order:
   - '/CV'
+  - '/travel'
   - '/publications'
-  - '/about'
 
 # Build settings
 markdown: kramdown

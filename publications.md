@@ -1,6 +1,7 @@
 ---
 layout: page
 title: Publications
+section-type: default
 permalink: /publications/
 ---
 
