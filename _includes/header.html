@@ -16,7 +16,10 @@
       <div class="trigger">
         {% for my_page in site.pages %}
           {% if my_page.title %}
-          <a class="page-link" href="{{ my_page.url | prepend: site.baseurl }}">{{ my_page.title }}</a>
+            <!-- Remove if statement when travel page is ready -->
+            {% if my_page.title != "Travel" %}
+            <a class="page-link" href="{{ my_page.url | prepend: site.baseurl }}">{{ my_page.title }}</a>
+            {% endif %}
           {% endif %}
         {% endfor %}
       </div>
